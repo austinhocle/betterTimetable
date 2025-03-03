@@ -5,7 +5,7 @@ import { Course, ScheduledTime, CourseTimes, FilteredCourseList, UnitDomain, Act
 
 /// -----------------------------------------------------------------------------------------------------
 ///
-///                                      RECURSIVE FUNCTIONS
+///                                  STAGE 4 - RECURSIVE FUNCTIONS
 ///         These are used to allocate timeslots without clashes, incorporating optimizations
 ///
 /// -----------------------------------------------------------------------------------------------------
