@@ -45,6 +45,12 @@ export const units = mysqlTable("units", {
   unitName: varchar("unitName", { length: 255 }).notNull(),
 });
 
+// Teaching Periods Table
+export const teachingPeriods = mysqlTable("teaching_periods", {
+  id: varchar("id", { length: 36 }).primaryKey().default(sql`(UUID())`),
+  periodName: varchar("periodName", { length: 50 }).notNull()
+})
+
 // Courses Table
 export const courses = mysqlTable("courses", {
   id: varchar("id", { length: 36 }).primaryKey().default(sql`(UUID())`),
