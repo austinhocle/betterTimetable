@@ -187,13 +187,13 @@ const Units: React.FC<UnitsProps> = ({
       </div>
 
       {/* Search Feature */}
-      <div className="mt-10 mb-16 flex items-center justify-center">
+      <div className="mt-10 mb-6 flex items-center justify-center">
           {loading ? (
             // Show "Searching..." when loading
-            <p className="text-xl text-blue-1000 font-semibold">Searching...</p>
+            <p className="text-xl mb-10 text-blue-1000 font-semibold">Searching...</p>
           ) : (
             // Show input form and search button when not loading
-            <div className="flex items-center justify-center space-x-4">
+            <div className="flex items-center justify-center space-x-4 mb-6">
               <input
                 type="text"
                 className="w-48 px-6 py-2 rounded-lg bg-blue-1500 border border-blue-1400 text-blue-1400"
@@ -213,7 +213,7 @@ const Units: React.FC<UnitsProps> = ({
         </div>
 
       {/* Display Error Message if any */}
-      {error && <p className="text-red-500 mb-6">{error}</p>}
+      {error && <p className="text-red-500 mb-6 flex items-center justify-center">{error}</p>}
 
       {/* Display Added Units */}
       <div className="flex items-center justify-center space-x-4 mb-6 flex-wrap">
